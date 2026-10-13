@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Raghulram S | Get in Touch</title>
+  <meta name="description" content="Contact Raghulram S about web development internships and projects using the accessible contact form or email.">
+  <!-- TODO: replace https://your-domain.example with your deployed domain -->
+  <link rel="canonical" href="https://your-domain.example/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact Raghulram S | Get in Touch">
+  <meta property="og:description" content="Contact Raghulram S about web development internships and projects using the accessible contact form or email.">
+  <meta property="og:url" content="https://your-domain.example/contact.html">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Public+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <!-- Skip link: first focusable element, lets keyboard users bypass the nav (WCAG 2.4.1) -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container bar">
+      <a class="brand" href="index.html">Raghulram S</a>
+      <!-- Native button; aria-expanded is toggled by script.js -->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="section" aria-labelledby="contact-title">
+      <div class="container two-col">
+        <div>
+          <h1 id="contact-title">Contact me</h1>
+          <p>Send a message about an internship, project or collaboration. Fields marked * are required.</p>
+
+          <!-- Shown by script.js when validation fails; receives focus so screen readers announce it -->
+          <div id="error-summary" class="alert alert-error" tabindex="-1" hidden>
+            <h2>Please fix the following</h2>
+            <ul id="error-list"></ul>
+          </div>
+          <!-- Live region for the submission result -->
+          <div id="form-status" role="status" class="alert alert-ok" hidden></div>
+
+          <!--
+            BACKEND PLACEHOLDER: this form does NOT send email yet.
+            To make it work, set action to a real endpoint (e.g. a Formspree or Web3Forms URL),
+            or replace the demo block in js/script.js with a fetch() POST to your service.
+          -->
+          <form id="contact-form" action="#" method="post" novalidate>
+            <div class="field">
+              <label for="name">Full name *</label>
+              <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+              <p id="name-error" class="error" hidden></p>
+            </div>
+            <div class="field">
+              <label for="email">Email address *</label>
+              <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+              <p id="email-error" class="error" hidden></p>
+            </div>
+            <div class="field">
+              <label for="subject">Subject *</label>
+              <input id="subject" name="subject" type="text" required minlength="3" aria-describedby="subject-error">
+              <p id="subject-error" class="error" hidden></p>
+            </div>
+            <div class="field">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="6" required minlength="10" aria-describedby="message-error"></textarea>
+              <p id="message-error" class="error" hidden></p>
+            </div>
+            <button class="btn" type="submit">Send message</button>
+          </form>
+        </div>
+
+        <aside aria-labelledby="direct-title">
+          <h2 id="direct-title">Other ways to reach me</h2>
+          <address>
+            <p>Email: <a href="mailto:raghulrams2207@gmail.com">raghulrams2207@gmail.com</a></p>
+            <p><a href="https://github.com/raghulrams2207" rel="noopener noreferrer">GitHub profile</a></p>
+            <p><a href="https://www.linkedin.com/in/raghulram-sivaprakash-895807381" rel="noopener noreferrer">LinkedIn profile</a></p>
+          </address>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; <time datetime="2026">2026</time> Raghulram S. B.Tech CSE student.</p>
+      <address>
+        <a href="mailto:raghulrams2207@gmail.com">raghulrams2207@gmail.com</a>
+      </address>
+      <nav aria-label="Social links">
+        <ul class="inline-list">
+          <li><a href="https://github.com/raghulrams2207" rel="noopener noreferrer">GitHub profile</a></li>
+          <li><a href="https://www.linkedin.com/in/raghulram-sivaprakash-895807381" rel="noopener noreferrer">LinkedIn profile</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

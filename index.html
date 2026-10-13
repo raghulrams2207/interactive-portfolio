@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raghulram S | Web Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Raghulram S, a second-year B.Tech Computer Science and Engineering student building accessible, responsive websites.">
+  <!-- TODO: replace https://your-domain.example with your deployed domain -->
+  <link rel="canonical" href="https://your-domain.example/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Raghulram S | Web Developer Portfolio">
+  <meta property="og:description" content="Portfolio of Raghulram S, a second-year B.Tech Computer Science and Engineering student building accessible, responsive websites.">
+  <meta property="og:url" content="https://your-domain.example/index.html">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Public+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <!-- Skip link: first focusable element, lets keyboard users bypass the nav (WCAG 2.4.1) -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container bar">
+      <a class="brand" href="index.html">Raghulram S</a>
+      <!-- Native button; aria-expanded is toggled by script.js -->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <h1 id="hero-title">Raghulram S</h1>
+          <p class="role">Web development intern &amp; B.Tech CSE student</p>
+          <p class="lead">I am a second-year Computer Science and Engineering student at Amrita Vishwa Vidyapeetham, learning to build fast, accessible websites with HTML, CSS and JavaScript.</p>
+          <p class="actions">
+            <a class="btn" href="projects.html">View my projects</a>
+            <a class="btn btn-outline" href="contact.html">Contact me</a>
+          </p>
+        </div>
+        <figure class="portrait">
+          <!-- Replace with your photo; keep width/height to prevent layout shift -->
+          <img src="assets/images/profile-placeholder.svg" width="320" height="320" alt="Portrait placeholder for Raghulram S">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title">Skills I am building</h2>
+        <ul class="chips">
+          <li>Semantic HTML5</li><li>CSS3 &amp; responsive layout</li><li>Vanilla JavaScript</li>
+          <li>Web accessibility (WCAG 2.2)</li><li>Git &amp; GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section alt" aria-labelledby="featured-title">
+      <div class="container">
+        <h2 id="featured-title">Featured projects</h2>
+        <p class="note">Placeholder projects. Replace them with your real work.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Task Tracker (placeholder)</h3>
+            <p>A keyboard-friendly to-do list that saves tasks in the browser.</p>
+            <p class="tech">HTML, CSS, JavaScript</p>
+          </article>
+          <article class="card">
+            <h3>Weather Dashboard (placeholder)</h3>
+            <p>A responsive forecast page that reads data from a public weather API.</p>
+            <p class="tech">HTML, CSS, JavaScript, Fetch API</p>
+          </article>
+          <article class="card">
+            <h3>Recipe Finder (placeholder)</h3>
+            <p>A searchable recipe list with accessible filters.</p>
+            <p class="tech">HTML, CSS, JavaScript</p>
+          </article>
+        </div>
+        <p><a href="projects.html">See all projects and links</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; <time datetime="2026">2026</time> Raghulram S. B.Tech CSE student.</p>
+      <address>
+        <a href="mailto:raghulrams2207@gmail.com">raghulrams2207@gmail.com</a>
+      </address>
+      <nav aria-label="Social links">
+        <ul class="inline-list">
+          <li><a href="https://github.com/raghulrams2207" rel="noopener noreferrer">GitHub profile</a></li>
+          <li><a href="https://www.linkedin.com/in/raghulram-sivaprakash-895807381" rel="noopener noreferrer">LinkedIn profile</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
